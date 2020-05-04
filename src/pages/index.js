@@ -2,17 +2,20 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import styles from "../components/index.module.css"
+import ClickablePosting from "../components/clickablePosting"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h2>WORK</h2>
+    <h2 style={{fontSize: 50}}>WORK</h2>
     <h3>Apps</h3>
     <p>https://expo.io/@caiocamatta/Movie-Finder Expo - React-native assignment (2020)</p>
     <p>https://expo.io/@caiocamatta/study-timer Expo - React-native assignment (2020)</p>
     <p>Tapping Tiles Google Play - C# (2016)</p>
+
+    <ClickablePosting />
 
     <h3>Websites</h3>
     <p>https://jcconstrutora.com.br/</p>
@@ -26,6 +29,12 @@ const IndexPage = () => (
     <p>electron google-cloud google-cloud-vision javascript</p>
     <p>https://devpost.com/software/moodmatch Hack The North 2018</p>
     <p>azure css html5 python reddit</p>
+
+    <h2>Work Experience</h2>
+    <p>Sales and Marketing Coordinator - MakerBars</p>
+    <p>Business Development Intern - Propel at Western University</p>
+    <p>Web Developer - JCC Construction</p>
+    <p>Research Assistant - Instituto Federal do Espirito Santo</p>
 
     <h2>Programming Experience</h2>
     <h4>Languages</h4>
