@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Caio Camatta`,
-    description: `Caio Camatta Coelho's Personal Website.`,
-    author: `@gatsbyjs`,
+    description: `Caio Camatta Coelho's Personal Website and Portfolio.`,
+    author: `Caio C Coelho`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
