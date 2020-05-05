@@ -13,7 +13,7 @@ const Footer = ({ props }) => (
             textAlign: 'center',
         }}>
 
-            <h3 style={{ margin: 0, color: 'white', fontSize: 20, }}>© {new Date().getFullYear()}. Made in London, ON with ❤.</h3>
+            <h3 style={{ margin: 0, color: 'white', fontSize: 20, }}>© {new Date().getFullYear()} Caio Camatta Coelho. Made in London, ON with ❤.</h3>
         </div>
     </footer>
 )

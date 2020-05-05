@@ -42,7 +42,7 @@ const IndexPage = () => (
         <div className="pt-16 text-center">
           <SocialIcon url="http://twitter.com/CamattaCaio" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
           <SocialIcon url="https://www.instagram.com/camattacaio/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
-          <SocialIcon url="linkedin.com/in/caio-coelho/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
+          <SocialIcon url="https://www.linkedin.com/in/caio-coelho/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
         </div>
       </div>
     </div>
