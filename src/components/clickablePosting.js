@@ -11,7 +11,7 @@ const styles = {
 export default function ClickablePosting(props) {
 
     return (
-        <div className=" bg-white shadow-lg rounded-lg overflow-hidden m-4 md:w-2/3 mx-auto">
+        <div className=" bg-white shadow-lg rounded-lg overflow-hidden m-4 md:w-4/5 mx-auto">
           <a href={props.link} target="_blank" >
             <div className="flex px-4 py-3 ">
                 <div className="flex-shrink-0 content-center mt-auto mb-auto pr-1">
