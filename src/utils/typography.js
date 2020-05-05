@@ -1,8 +1,8 @@
 import Typography from "typography"
-import oceanBeachTheme from "typography-theme-ocean-beach"
+import greadViewTheme from "typography-theme-grand-view"
 
 const typography = new Typography({
-    ...oceanBeachTheme,
+    ...greadViewTheme,
     overrideThemeStyles: () => ({
         a: {
             textShadow: null,

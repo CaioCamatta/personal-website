@@ -3,52 +3,78 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styles from "../components/index.module.css"
+import cssModule from "../components/index.module.css"
 import ClickablePosting from "../components/clickablePosting"
+import { SocialIcon } from 'react-social-icons';
+
+const styles = {
+  workExperience: {
+    color: "#fff"
+  }
+}
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h2 style={{fontSize: 50}}>WORK</h2>
-    <h3>Apps</h3>
-    <p>https://expo.io/@caiocamatta/Movie-Finder Expo - React-native assignment (2020)</p>
-    <p>https://expo.io/@caiocamatta/study-timer Expo - React-native assignment (2020)</p>
-    <p>Tapping Tiles Google Play - C# (2016)</p>
+    <div className="">
+      <div style={{
+        margin: `0 auto`,
+        maxWidth: 960,
+        minHeight: 600,
+        padding: `0 1.0875rem 1.45rem`,
+      }}>
+        {/* <h2 className="text-center pt-10 text-5xl">WORK</h2> */}
 
-    <ClickablePosting />
+        <h3 className="text-2xl sm:text-3xl md:text-5xl pt-16 pb-2 text-gray-800 font-light text-center">Websites</h3>
+        <ClickablePosting title="JCC Construction" description="Website Design, Backend in Python, SEO, Online Ads" image="symbol.png" imageAlt="JCC Construtora" link="https://jcconstrutora.com.br/" />
+        <ClickablePosting title="Central Truck and Trailer Shop" description="Website Design" image="truckandtrailer.png" imageAlt="Central Truck and Trailer" link="https://www.centraltruckandtrailer.com/" />
+        <h3 className="text-2xl sm:text-3xl md:text-5xl pt-16 pb-2 text-gray-800 font-light text-center">Apps</h3>
+        <ClickablePosting title="Movie Finder" description="2020 - Harvard CS50 Assignment - React Native" image="moviefinder.png" imageAlt="Movie Finder" link="https://expo.io/@caiocamatta/Movie-Finder" />
+        <ClickablePosting title="Study Timer" description="2020 - Harvard CS50 Assignment - React Native" image="studytimer.png" imageAlt="Study Timer" link="https://expo.io/@caiocamatta/study-timer" />
+        <ClickablePosting title="Tapping Tiles" description="2016 - Google Play - C# Unity " image="tappingtiles.png" imageAlt="Tapping Tiles" link="https://play.google.com/store/apps/details?id=com.CaioCoelho.TappingTiles" />
 
-    <h3>Websites</h3>
-    <p>https://jcconstrutora.com.br/</p>
+        <h3 className="text-2xl sm:text-3xl md:text-5xl pt-16 pb-2 text-gray-800 font-light text-center">Hackathons</h3>
+        <ClickablePosting title="Hack Western 2019" description="c++ docker git json machine-learning python scikit-learn" image="hackwestern6.jpg" imageAlt="Hack Western 2019" link="https://devpost.com/software/smartcommute" />
+        <ClickablePosting title="Hack The North 2019" description="azure firebase javascript python" image="hackthenorth2019.jpg" imageAlt="Hack the North 2019" link="https://devpost.com/software/conscious-crowd" />
+        <ClickablePosting title="Hack Western 2018 - Winner" description="electron google-cloud google-cloud-vision javascript" image="alyn.png" imageAlt="Hack Western 2018" link="https://devpost.com/software/align-dui5lc" />
+        <ClickablePosting title="Hack The North 2018" description="azure css html5 python reddit" image="hackthenorth2018.jpg" imageAlt="Hack the North 2018" link="https://devpost.com/software/moodmatch" />
 
-    <h3>Hackathons</h3>
-    <p>https://devpost.com/software/smartcommute HackWestern 2019</p>
-    <p>c++ docker git json machine-learning python scikit-learn</p>
-    <p>https://devpost.com/software/conscious-crowd Hack The North 2019</p>
-    <p>azure firebase javascript python</p>
-    <p>👑 https://devpost.com/software/align-dui5lc HackWestern 2018</p>
-    <p>electron google-cloud google-cloud-vision javascript</p>
-    <p>https://devpost.com/software/moodmatch Hack The North 2018</p>
-    <p>azure css html5 python reddit</p>
+        <div className="pt-16 text-center">
+          <SocialIcon url="http://twitter.com/CamattaCaio" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
+          <SocialIcon url="https://www.instagram.com/camattacaio/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
+          <SocialIcon url="linkedin.com/in/caio-coelho/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
+        </div>
+      </div>
+    </div>
 
-    <h2>Work Experience</h2>
-    <p>Sales and Marketing Coordinator - MakerBars</p>
-    <p>Business Development Intern - Propel at Western University</p>
-    <p>Web Developer - JCC Construction</p>
-    <p>Research Assistant - Instituto Federal do Espirito Santo</p>
+    {/* <div className="bg-gray-800">
+      <div style={{
+        margin: `0 auto`,
+        maxWidth: 960,
+        minHeight: 600,
+        padding: `0 1.0875rem 1.45rem`,
+      }}>
 
-    <h2>Programming Experience</h2>
-    <h4>Languages</h4>
-    <p>Python, Javascript, C, Java, Assembly</p>
-    <h4>Libraries</h4>
-    <p>Django, Flask, Tensorflow, Pandas, Scikit-Learn</p>
-    <p>React, React-Native, Gatsby</p>
-    <h4>Concepts</h4>
-    <p>Git, Linux/Unix, Google Cloud, REST APIs</p>
-    <p>Web Design, Web Development, Machine Learning, Data Analysis, Mobile App Development</p>
-    <p>Data Structures, Object-Oriented Programming</p>
+        <div className="text-white py-4 px-6" styles={styles.workExperience}>
+          <h2 className="md:text-5xl pt-2 pb-2 text-md">Work Experience</h2>
+          <p>Sales and Marketing Coordinator - MakerBars</p>
+          <p>Business Development Intern - Propel at Western University</p>
+          <p>Web Developer - JCC Construction</p>
+          <p>Research Assistant - Instituto Federal do Espirito Santo</p>
+          <h2 className="md:text-xl pt-4 pb-2">Programming Experience</h2>
+          <h4>Languages</h4>
+          <p>Python, Javascript, C, Java, Assembly</p>
+          <h4>Libraries</h4>
+          <p>Django, Flask, Tensorflow, Pandas, Scikit-Learn</p>
+          <p>React, React-Native, Gatsby</p>
+          <h4>Concepts</h4>
+          <p>Git, Linux/Unix, Google Cloud, REST APIs</p>
+          <p>Web Design, Web Development, Machine Learning, Data Analysis, Mobile App Development</p>
+          <p>Data Structures, Object-Oriented Programming</p>
+        </div>
+      </div>
+    </div> */}
 
-    <p>https://www.instagram.com/camattacaio/</p>
-    <p>linkedin.com/in/caio-coelho</p>
   </Layout>
 )
 

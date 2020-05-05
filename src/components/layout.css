@@ -1,0 +1,9 @@
+#body{
+    border: 40px solid white;
+}
+
+@media (max-width: 640px) {
+    #body{
+        border: none;
+    }
+}

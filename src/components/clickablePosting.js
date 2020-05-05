@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Image from "./Image"
 
 const styles = {
     box: {
@@ -10,39 +9,36 @@ const styles = {
 }
 
 export default function ClickablePosting(props) {
-    const data = useStaticQuery(graphql`
-      query {
-        icon: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `)
 
     return (
-        <div className="mx-auto bg-white shadow-lg rounded-lg overflow-hidden m-4">
-            <div className="flex px-4 py-2 ">
-                <div className="flex-shrink-0 content-center mt-auto mb-auto pr-3">
-                    <Img fluid={data.icon.childImageSharp.fluid} className="h-12 w-12" />
+        <div className=" bg-white shadow-lg rounded-lg overflow-hidden m-4 md:w-2/3 mx-auto">
+          <a href={props.link} target="_blank" >
+            <div className="flex px-4 py-3 ">
+                <div className="flex-shrink-0 content-center mt-auto mb-auto pr-1">
+                    <Image filename={props.image} className="h-12 w-12" alt={props.imageAlt} class="h-12 w-12"/>
                 </div>
-                <div className="mt-4 sm:mt-0 sm:ml-4 sm:text-left">
-                    <h4 className="text-xl leading-tight">{props.title}</h4>
-                    <p className="text-sm leading-tight text-gray-600">{props.description}</p>
+                <div className="md:mt-1 mt-0 mt-2 mx-4 text-left">
+                    <h4 className="md:text-xl leading-tight text-gray-700 font-light">{props.title}</h4>
+                    <p className="text-sm leading-tight text-gray-600" style={{paddingTop: 2}}>{props.description}</p>
                 </div>
             </div>
+          </a>
         </div>
     )
 }
 
 ClickablePosting.propTypes = {
     description: PropTypes.string,
-    description: PropTypes.string,
+    title: PropTypes.string,
+    link: PropTypes.string,
+    image: PropTypes.string,
+    imageAlt: PropTypes.string,
 }
 
 ClickablePosting.defaultProps = {
     title: `Eleifend maximus`,
     description: "Nunc purus sem, cursus vel massa eu, eleifend maximus nulla.",
-}
+    link: "https://www.google.com",
+    image: "gatsby-astronaut.png",
+    imageAlt: "Caio Camatta Coelho",
+  }
