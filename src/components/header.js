@@ -4,18 +4,18 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#F65058`,
-    }}
+      background: `#ffea7c`,
+    }} className="sm:border-black sm:border-8"
   >
     <div
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `7.45rem 1.0875rem`,
+        paddingHorizontal: `1.0875rem`,
         textAlign: 'center',
-      }}
+      }} className="py-16 sm:py-32"
     >
-      <h1 style={{ margin: 0, color: 'white'}} className="text-3xl sm:text-4xl md:text-6xl">{siteTitle}</h1>
+      <h1 style={{ margin: 0, color: '#1d1d1b'}} className="text-3xl sm:text-4xl md:text-6xl">{siteTitle}</h1>
     </div>
   </header>
 )

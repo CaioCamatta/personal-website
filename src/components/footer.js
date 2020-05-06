@@ -4,7 +4,7 @@ import React from "react"
 
 const Footer = ({ props }) => (
     <footer style={{
-        background: `#f8ce6a`,
+        background: `#000`,
     }}>
         <div style={{
             margin: `0 auto`,
@@ -13,7 +13,7 @@ const Footer = ({ props }) => (
             textAlign: 'center',
         }}>
 
-            <h3 style={{ margin: 0, color: 'white', fontSize: 20, }}>© {new Date().getFullYear()} Caio Camatta Coelho. Made in London, ON with ❤.</h3>
+            <h3 style={{ margin: 0, color: '#a0958a', fontSize: 20, }}>© {new Date().getFullYear()} Caio Camatta Coelho. Made in London, ON with ❤.</h3>
         </div>
     </footer>
 )
