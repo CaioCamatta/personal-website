@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
         textAlign: 'center',
       }} className="py-16 sm:py-32"
     >
-      <h1 style={{ margin: 0, color: '#1d1d1b'}} className="text-3xl sm:text-4xl md:text-6xl">{siteTitle}</h1>
+      <h1 style={{ margin: 0, color: '#1d1d1b'}} className="text-4xl sm:text-5xl md:text-6xl">{siteTitle}</h1>
     </div>
   </header>
 )
