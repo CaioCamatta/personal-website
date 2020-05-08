@@ -4,3 +4,8 @@ html {
 h1{
     font-size: 7rem;
 }
+
+#ReactGridGallery{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
