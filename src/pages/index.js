@@ -13,12 +13,7 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 
-const images = [
-  '//placekitten.com/1500/500',
-  '//placekitten.com/4000/3000',
-  '//placekitten.com/800/1200',
-  '//placekitten.com/1500/1500',
-];
+const images = [];
 
 const styles = {
   workExperience: {
@@ -69,6 +64,7 @@ class IndexPage extends React.Component {
 
     this.state = {
       photoIndex: 0,
+      srcsLoaded: false,
       isOpen: false,
     };
   }
@@ -109,12 +105,15 @@ class IndexPage extends React.Component {
                 query={query}
                 render={data => (
                   <div className="flex flex-wrap -mx-2">
+                    {images.length == 0 && (data.allFile.edges.map(image => (
+                      images.push(image.node.childImageSharp.fluid.srcSet.split(',')[5].slice(1,-5))
+                    )))}
                     {data.allFile.edges.map(image => (
 
                       <div class="w-1/2 sm:w-1/3 p-1 sm:p-2 cursor-pointer" onClick={() => this.setState({ isOpen: true })}>
                         <Img
                           fluid={image.node.childImageSharp.fluid}
-                          alt={image.node.base.split(".")[0]} // only use section of the file extension with the filename
+                          alt={image.node.base.split(".")[0].split("_").join(" ")} // only use section of the file extension with the filename
                           className=""
                         />
                       </div>
@@ -143,6 +142,7 @@ class IndexPage extends React.Component {
             </div>
 
             <div className="pt-20 pb-2   text-center">
+              <SocialIcon url="https://github.com/CaioCamatta" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
               <SocialIcon url="http://twitter.com/CamattaCaio" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
               <SocialIcon url="https://www.instagram.com/camattacaio/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
               <SocialIcon url="https://www.linkedin.com/in/caio-coelho/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
