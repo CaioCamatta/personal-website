@@ -110,9 +110,9 @@ class IndexPage extends React.Component {
                         images.push(image.node.childImageSharp.fluid.srcSet.split(',')[5].slice(1,-5))
                       )))}
                     </div>
-                    {data.allFile.edges.map(image => (
+                    {data.allFile.edges.map((image,key) => (
 
-                      <div class="w-1/2 sm:w-1/3 p-1 sm:p-2 cursor-pointer" onClick={() => this.setState({ isOpen: true })}>
+                      <div class="w-1/2 sm:w-1/3 p-1 sm:p-2 cursor-pointer" onClick={() => this.setState({ isOpen: true,  photoIndex: key })}>
                         <Img
                           fluid={image.node.childImageSharp.fluid}
                           alt={image.node.base.split(".")[0].split("_").join(" ")} // only use section of the file extension with the filename
