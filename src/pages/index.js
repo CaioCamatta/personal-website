@@ -105,9 +105,11 @@ class IndexPage extends React.Component {
                 query={query}
                 render={data => (
                   <div className="flex flex-wrap -mx-2">
-                    {images.length == 0 && (data.allFile.edges.map(image => (
-                      images.push(image.node.childImageSharp.fluid.srcSet.split(',')[5].slice(1,-5))
-                    )))}
+                    <div className="hidden">
+                      {images.length == 0 && (data.allFile.edges.map(image => (
+                        images.push(image.node.childImageSharp.fluid.srcSet.split(',')[5].slice(1,-5))
+                      )))}
+                    </div>
                     {data.allFile.edges.map(image => (
 
                       <div class="w-1/2 sm:w-1/3 p-1 sm:p-2 cursor-pointer" onClick={() => this.setState({ isOpen: true })}>
