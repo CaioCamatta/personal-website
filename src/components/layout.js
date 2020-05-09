@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
     <div id="body">
       <Header siteTitle={data.site.siteMetadata.title} />
 
-      <main>{children}</main>
+      <main className="min-h-screen">{children}</main>
 
       <Footer />
     </div>
