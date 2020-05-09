@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "caio-camatta-website",
-        short_name: "website",
+        name: "Caio Camatta's Personal Website",
+        short_name: "Caio's Website",
         start_url: "/",
         background_color: "#F65058",
         theme_color: "#F65058",
