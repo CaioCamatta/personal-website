@@ -83,9 +83,9 @@ class IndexPage extends React.Component {
             padding: `0 1.0875rem 1.45rem`,
           }}>
             {/* <h2 className="text-center pt-10 text-5xl">WORK</h2> */}
-            <p className="text-gray-700 mt-10 sm:mt-16 xl:mt-24 text-xl ">This is a library of some of the stuff I have created over the years. Find many other projects on my GitHub page or my LinkedIn profile.</p>
+            <p className="text-gray-700 mt-10 sm:mt-16 xl:mt-24 text-center sm:text-xl ">This is a library of some of the more concrete apps and websites I have created or helped create. Check out my GitHub page or LinkedIn profile for more.</p>
 
-            <h3 className={`text-3xl sm:text-3xl md:text-6xl mt-8 pb-2 text-gray-800 font-light inline-block pr-4`} style={styles.greenBrush}>Websites</h3>
+            <h3 className={`text-3xl sm:text-3xl md:text-6xl mt-10 pb-2 text-gray-800 font-light inline-block pr-4`} style={styles.greenBrush}>Websites</h3>
             <ClickablePosting title="JCC Construction" description="Website Design, Backend in Python, SEO, Online Ads" image="symbol.png" imageAlt="JCC Construtora" link="https://jcconstrutora.com.br/" />
             <ClickablePosting title="Central Truck and Trailer Shop" description="Website Design" image="truckandtrailer.png" imageAlt="Central Truck and Trailer" link="https://www.centraltruckandtrailer.com/" />
 
