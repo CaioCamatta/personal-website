@@ -82,14 +82,13 @@ class IndexPage extends React.Component {
             minHeight: 600,
             padding: `0 1.0875rem 1.45rem`,
           }}>
-            {/* <h2 className="text-center pt-10 text-5xl">WORK</h2> */}
-            <p className="text-gray-700 mt-10 sm:mt-16 xl:mt-24 text-center sm:text-xl ">This is a library of some of the more concrete apps and websites I have created or helped create. Check out my GitHub page or LinkedIn profile for more.</p>
-
             <h3 className={`text-3xl sm:text-3xl md:text-6xl mt-10 pb-2 text-gray-800 font-light inline-block pr-4`} style={styles.greenBrush}>Websites</h3>
-            <ClickablePosting title="JCC Construction" description="Website Design, Backend in Python, SEO, Online Ads" image="symbol.png" imageAlt="JCC Construtora" link="https://jcconstrutora.com.br/" />
+            <ClickablePosting title="JCC Construction" description="Re-design, Backend in Python (Flask), AWS, Serverless" image="symbol.png" imageAlt="JCC Construtora" link="https://jcconstrutora.com.br/" />
+            <ClickablePosting title="JCC Construction - Old" description="Website Design, Backend in Python (Django), SEO, Online Ads" image="symbol-dark.png" imageAlt="JCC Construtora" link="https://jcconstrutora.com.br/" />
             <ClickablePosting title="Central Truck and Trailer Shop" description="Website Design" image="truckandtrailer.png" imageAlt="Central Truck and Trailer" link="https://www.centraltruckandtrailer.com/" />
 
             <h3 className="text-3xl sm:text-3xl md:text-6xl mt-10 sm:mt-16 xl:mt-24 pb-2 text-gray-800 font-light inline-block pr-4" style={styles.pinkBrush}>Apps</h3>
+            <ClickablePosting title="Mood Tracker" description="2020 - React" image="moodtracker.png" imageAlt="Mood tracker" link="https://expo.io/@caiocamatta/mood-journal" />
             <ClickablePosting title="Movie Finder" description="2020 - Harvard CS50 Assignment - React Native" image="moviefinder.png" imageAlt="Movie Finder" link="https://expo.io/@caiocamatta/Movie-Finder" />
             <ClickablePosting title="Study Timer" description="2020 - Harvard CS50 Assignment - React Native" image="studytimer.png" imageAlt="Study Timer" link="https://expo.io/@caiocamatta/study-timer" />
             <ClickablePosting title="Tapping Tiles" description="2016 - Google Play - C# Unity " image="tappingtiles.png" imageAlt="Tapping Tiles" link="https://play.google.com/store/apps/details?id=com.CaioCoelho.TappingTiles" />
@@ -146,41 +145,11 @@ class IndexPage extends React.Component {
 
             <div className="pt-20 pb-2   text-center">
               <SocialIcon url="https://github.com/CaioCamatta" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
-              <SocialIcon url="http://twitter.com/CamattaCaio" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
               <SocialIcon url="https://www.instagram.com/camattacaio/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
               <SocialIcon url="https://www.linkedin.com/in/caio-coelho/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
             </div>
           </div>
         </div>
-
-        {/* <div className="bg-gray-800">
-      <div style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        minHeight: 600,
-        padding: `0 1.0875rem 1.45rem`,
-      }}>
-
-        <div className="text-white py-4 px-6" styles={styles.workExperience}>
-          <h2 className="md:text-5xl pt-2 pb-2 text-md">Work Experience</h2>
-          <p>Sales and Marketing Coordinator - MakerBars</p>
-          <p>Business Development Intern - Propel at Western University</p>
-          <p>Web Developer - JCC Construction</p>
-          <p>Research Assistant - Instituto Federal do Espirito Santo</p>
-          <h2 className="md:text-xl pt-4 pb-2">Programming Experience</h2>
-          <h4>Languages</h4>
-          <p>Python, Javascript, C, Java, Assembly</p>
-          <h4>Libraries</h4>
-          <p>Django, Flask, Tensorflow, Pandas, Scikit-Learn</p>
-          <p>React, React-Native, Gatsby</p>
-          <h4>Concepts</h4>
-          <p>Git, Linux/Unix, Google Cloud, REST APIs</p>
-          <p>Web Design, Web Development, Machine Learning, Data Analysis, Mobile App Development</p>
-          <p>Data Structures, Object-Oriented Programming</p>
-        </div>
-      </div>
-    </div> */}
-
       </Layout >
     )
   }
