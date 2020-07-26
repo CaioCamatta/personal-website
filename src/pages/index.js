@@ -86,7 +86,7 @@ class IndexPage extends React.Component {
             <SocialIcon url="https://www.linkedin.com/in/caio-coelho/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
             <SocialIcon url="https://www.instagram.com/camattacaio/" className="no-underline bg-transparent mx-1" style={{ backgroundImage: "none" }} />
           </div>
-            <h3 className={`text-3xl sm:text-3xl md:text-5xl mt-4 sm:mt-10 pb-2 text-gray-800 font-light inline-block pr-4`} style={styles.greenBrush}>Websites</h3>
+            <h3 className={`text-3xl sm:text-3xl md:text-5xl mt-4 sm:mt-6 pb-2 text-gray-800 font-light inline-block pr-4`} style={styles.greenBrush}>Websites</h3>
             <ClickablePosting title="JCC Construction" description="Re-design, Python (Flask), AWS, Serverless" image="symbol.png" imageAlt="JCC Construtora" link="https://jcconstrutora.com.br/" />
             <ClickablePosting title="Personal Website" description="React, Gatsby, Heroku" image="personalwebiste.png" imageAlt="Personal website logo" link="https://www.caio.space/" />
             <ClickablePosting title="Central Truck and Trailer Shop" description="Website Design" image="truckandtrailer.png" imageAlt="Central Truck and Trailer" link="https://www.centraltruckandtrailer.com/" />
