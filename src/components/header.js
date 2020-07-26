@@ -24,8 +24,7 @@ const Header = ({ siteTitle }) => (
     return (
       <header
         style={{
-          background: `#F65058`,
-        }} className="sm:border-black sm:border-8 mb-8 sm:mb-0 "
+        }} className="mb-2 pt-10 md:pt-2"
       >
         <div
           style={{
@@ -33,12 +32,12 @@ const Header = ({ siteTitle }) => (
             maxWidth: 960,
             paddingHorizontal: `1.0875rem`,
             textAlign: 'center',
-          }} className=" pt-16 pb-24 sm:py-16"
+          }} className=""
         >
-          <h1 style={{ margin: 0, color: '#fff' }} className="text-4xl sm:text-5xl md:text-6xl">{siteTitle}</h1>
-          <p className="text-md text-white pt-3">Western University '22</p>
-          <p className="text-md text-white pt-0 sm:pb-0">London, ON</p>
-          <Img fluid={data.file.childImageSharp.fluid} alt="Caio Camatta Coelho Profile Picture" className="h-20 w-20 sm:h-32 sm:w-32 rounded-full mx-auto p-b-2 mt-4 sm:border-8 border-black -mb-32" />
+          <Img fluid={data.file.childImageSharp.fluid} alt="Caio Camatta Coelho Profile Picture" className="h-16 w-16 sm:h-24 sm:w-24 rounded-full mx-auto p-b-2" />
+          <h1 style={{ color: '#333' }} className="text-4xl sm:text-5xl md:text-6xl mt-2">{siteTitle}</h1>
+          <p className="text-md pt-2">Western University '22</p>
+          <p className="text-md pt-0 sm:pb-0">London, ON</p>
         </div>
       </header>
     )
