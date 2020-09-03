@@ -90,7 +90,7 @@ class IndexPage extends React.Component {
             <ClickablePosting title="JCC Construction" description="Re-design, Python (Flask), AWS, Serverless" image="symbol.png" imageAlt="JCC Construtora" link="https://jcconstrutora.com.br/" />
             <ClickablePosting title="Personal Website" description="React, Gatsby, Heroku" image="personalwebiste.png" imageAlt="Personal website logo" link="https://www.caio.space/" />
             <ClickablePosting title="Central Truck and Trailer Shop" description="Website Design" image="truckandtrailer.png" imageAlt="Central Truck and Trailer" link="https://www.centraltruckandtrailer.com/" />
-            <ClickablePosting title="JCC Construction" description="Website Design, Python (Django), SEO, Online Ads" image="symbol-dark.png" imageAlt="JCC Construtora" link="https://jcconstrutora.com.br/" />
+            <ClickablePosting title="JCC Construction" description="Website Design, Python (Django), SEO, Online Ads" image="symbol-dark-jcc.png" imageAlt="JCC Construtora old" link="https://jcconstrutora.com.br/" />
 
             <h3 className="text-3xl sm:text-3xl md:text-5xl mt-2 sm:mt-6 xl:mt-6 pb-2 text-gray-800 font-light inline-block pr-4" style={styles.pinkBrush}>Apps</h3>
             <ClickablePosting title="Daily Mood Tracker" description="2020 - React Native" image="moodtracker.png" imageAlt="Mood tracker" link="https://play.google.com/store/apps/details?id=com.CaioCoelho.moodJournal" />
