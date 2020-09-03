@@ -93,10 +93,10 @@ class IndexPage extends React.Component {
             <ClickablePosting title="JCC Construction" description="Website Design, Python (Django), SEO, Online Ads" image="symbol-dark.png" imageAlt="JCC Construtora" link="https://jcconstrutora.com.br/" />
 
             <h3 className="text-3xl sm:text-3xl md:text-5xl mt-2 sm:mt-6 xl:mt-6 pb-2 text-gray-800 font-light inline-block pr-4" style={styles.pinkBrush}>Apps</h3>
-            <ClickablePosting title="Daily Mood Tracker" description="2020 - React Native" image="moodtracker.png" imageAlt="Mood tracker" link="https://expo.io/@caiocamatta/mood-journal" />
+            <ClickablePosting title="Daily Mood Tracker" description="2020 - React Native" image="moodtracker.png" imageAlt="Mood tracker" link="https://play.google.com/store/apps/details?id=com.CaioCoelho.moodJournal" />
             <ClickablePosting title="Movie Finder" description="2020 - Harvard CS50 Assignment - React Native" image="moviefinder.png" imageAlt="Movie Finder" link="https://expo.io/@caiocamatta/Movie-Finder" />
             <ClickablePosting title="Study Timer" description="2020 - Harvard CS50 Assignment - React Native" image="studytimer.png" imageAlt="Study Timer" link="https://expo.io/@caiocamatta/study-timer" />
-            <ClickablePosting title="Tapping Tiles" description="2016 - Google Play - C# Unity " image="tappingtiles.png" imageAlt="Tapping Tiles" link="https://play.google.com/store/apps/details?id=com.CaioCoelho.TappingTiles" />
+            <ClickablePosting title="Tilefall" description="2016 - Google Play - C# Unity " image="tappingtiles.png" imageAlt="Tapping Tiles" link="https://play.google.com/store/apps/details?id=com.CaioCoelho.Tilefall" />
 
             <h3 className="text-3xl sm:text-3xl md:text-5xl mt-2 sm:mt-6 xl:mt-6 pb-2 text-gray-800 font-light inline-block pr-4" style={styles.paleBrush}>Hackathons</h3>
             <ClickablePosting title="Hack Western 2019" description="c++ docker git json machine-learning python scikit-learn" image="hackwestern6.jpg" imageAlt="Hack Western 2019" link="https://devpost.com/software/smartcommute" customDescriptionClass="hidden md:block" />
