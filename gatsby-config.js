@@ -3,6 +3,7 @@ module.exports = {
     title: `Caio Camatta`,
     description: `Caio Camatta Coelho's Personal Website and Portfolio.`,
     author: `Caio C Coelho`,
+    siteUrl: "https://caio-website-prod.herokuapp.com",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +25,7 @@ module.exports = {
         background_color: "#F65058",
         theme_color: "#F65058",
         display: "minimal-ui",
-        icon: "src/images/icon.png"
+        icon: "src/images/icon.png",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -37,5 +38,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://caio-website-prod.herokuapp.com",
+        policy: [{ userAgent: "*", disallow: "/" }],
+      },
+    },
   ],
 }
